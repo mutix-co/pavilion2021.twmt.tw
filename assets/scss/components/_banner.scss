@@ -2,12 +2,18 @@
 
 .banner {
   position: relative;
-  min-height: calc(100vh - 50px);
-  background: #1a384d center no-repeat;
-  background-size: cover;
+  max-width: 1920px;
+  min-height: 400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #42210b;
+  border: none;
+  overflow: hidden;
 
-  @media (min-width: $screen-md) {
-    min-height: calc(100vw * 600 / 1280);
+  & > img {
+    width: 100%;
+    border: none;
   }
 
   &::before {
@@ -17,54 +23,78 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.2);
-  }
-
-  &.banner--index {
-    background-image: url("~/assets/images/banner/index-sm.jpg");
-
-    @media (min-width: $screen-md) {
-      background-image: url("~/assets/images/banner/index-md.jpg");
-    }
-  }
-
-  &.banner--1f {
-    background-image: url("~/assets/images/banner/multifunctional.jpg");
-  }
-
-  &.banner--2f {
-    background-image: url("~/assets/images/banner/co-working-space.jpg");
-  }
-
-  &.banner-service {
-    background-image: url("~/assets/images/banner/service.jpg");
+    border: none;
+    background-size: cover;
+    background-position: top center;
+    background-image: url("~/assets/images/banner.png");
   }
 }
 
-.title-text-container {
-  position: absolute;
-  bottom: 5%;
+.banner-icons {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 0 20px;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 22%;
+  width: 100%;
+  color: #3A1E10;
+  opacity: .5;
 
-  & > * {
-    margin: 0;
+  & > li {
+    display: flex;
+    align-items: center;
+
+    & > p {
+      padding: 0 20px;
+    }
+  }
+}
+
+.nav {
+  position: absolute;
+  top: 3%;
+  right: 10%;
+  display: flex;
+
+  a {
+    color: #42210B;
+    border-left: 1px solid #42210B;
+    padding: 0 10px;
+
+    &:first-child {
+      border: none;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .banner-icons img {
+    width: 40px;
   }
 
-  @media (min-width: $screen-md) {
-    top: initial;
-    bottom: 50px;
-    padding-left: 10%;
+  .nav {
+    flex-direction: column;
 
-    .text-title {
-      white-space: nowrap;
+    & > a {
+      border: none;
+      padding: 3px 10px;
+      border-top: 1px solid #42210B;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .banner-icons {
+    flex-direction: column;
+    bottom: 15%;
+
+    & > li {
+      margin: 0 auto;
+      height: 24px;
     }
   }
 
-  .text-description {
-    margin-bottom: 0;
-    max-width: 410px;
+  .banner-icons img {
+    width: 20px;
   }
 }

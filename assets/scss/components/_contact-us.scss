@@ -1,0 +1,40 @@
+.contact-us {
+  display: flex;
+  width: 100%;
+  background: #BE9266;
+  height: 360px;
+  align-items: center;
+  margin-top: 200px;
+  flex-wrap: wrap;
+
+  .title {
+    color: #fff;
+    padding: 0 100px;
+  }
+
+  .input {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    input {
+      background: #fff;
+      border: none;
+      margin: 0;
+      height: 82px;
+      flex: 1;
+    }
+
+    button {
+      background: #3A1E10;
+      color: #fff;
+      border: none;
+      margin: 0;
+      height: 82px;
+      width: 227px;
+      font-size: 1.6rem;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.press-conference {
+  margin-top: 100px;
+
+  .title {
+    color: #754C24;
+    text-align: center;
+    padding: 2rem 0;
+  }
+}
+
+.press-conference-content {
+  background: #F5F3F6;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 40px 80px;
+
+  .subtitle {
+    color: #C69C6D;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .description {
+    font-size: 1.4rem;
+  }
+}

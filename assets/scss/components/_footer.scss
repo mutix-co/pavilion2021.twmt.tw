@@ -1,3 +1,43 @@
 .footer {
   padding: 25px 0;
+  background-repeat: no-repeat;
+  background-color: #3A1E10;
+  background-position: right 5% bottom 10px;
+  background-size: 20%;
+  background-image: url("~/assets/images/footer-bg.png");
+  color: #fff;
+  overflow: hidden;
+
+  & img {
+    max-width: 100%;
+  }
+}
+
+.footer-information {
+  display: flex;
+  margin: 0 30% 0 10%;
+  border-bottom: 1px solid #fff;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}
+
+.footer-contact-us {
+  padding: 0 30px;
+}
+
+.footer-groups {
+  margin: 0 30% 0 10%;
+  padding: 40px 0;
+}
+
+.footer-copyright {
+  color: #f3f3f3;
+  text-align: center;
+  font-size: .5rem;
+}
+
+@media (max-width: 640px) {
+  .footer-information {
+    margin: 0 10%;
+  }
 }

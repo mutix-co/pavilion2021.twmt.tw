@@ -1,0 +1,59 @@
+.conference-program {
+  height: 956px;
+  background: linear-gradient(90deg, #3a1e10 45%, #fff 45%);
+  position: relative;
+  margin-top: 200px;
+
+  .title {
+    color: #fff;
+    margin-left: 10%;
+  }
+
+  .program {
+    margin: 0 10%;
+
+    li {
+      display: flex;
+      align-items: center;
+      min-height: 220px;
+      flex-wrap: wrap;
+
+      .program-information {
+        flex: 1;
+        padding: 0 20px;
+      }
+
+      .program-logo {
+        width: 350px;
+        padding: 0 30px;
+      }
+    }
+
+    li:nth-child(odd) {
+      background: #fff;
+    }
+
+    li:nth-child(even) {
+      background: #F5F3F6;
+    }
+  }
+
+  .program-header {
+    background: #c69c6d;
+    height: 117px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+
+    .program-date {
+      font-size: 2rem;
+      flex: 1;
+      padding: 5%;
+    }
+
+    .program-timezone {
+      font-size: 1.2rem;
+      width: 350px;
+    }
+  }
+}

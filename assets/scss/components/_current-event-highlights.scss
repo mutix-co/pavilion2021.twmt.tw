@@ -1,0 +1,33 @@
+.current-event-highlights {
+  height: 956px;
+  background-color: #3a1e10;
+  background-image: url(~/assets/images/current-event-highlights-cover.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-top: 600px;
+  background-size: auto 100%;
+
+  .title {
+    color: #fff;
+    margin-left: 10%;
+    padding-top: 100px;
+  }
+
+  .description {
+    width: 45%;
+    margin-left: 10%;
+    margin-top: 50px;
+    background: #BE9266;
+    color: #fff;
+    padding: 50px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .current-event-highlights {
+    background-size: contain;
+    background-position: center center;
+  }
+}

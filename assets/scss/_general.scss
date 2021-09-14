@@ -13,14 +13,14 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   letter-spacing: 0.026em;
+  font-size: 16px;
 }
 
 body {
   margin: 0;
-  color: $white;
-  font-size: 15px;
+  color: #000;
   font-weight: 600;
-  background: $black;
+  background: #f3f3f3;
   overflow-x: hidden;
 }
 
@@ -52,114 +52,15 @@ a {
 }
 
 .container {
-  max-width: 1280px;
+  position: relative;
+  max-width: 1920px;
+  width: 100%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
-.anchor {
-  height: $topbar-height * 1.4;
-  margin: $topbar-height * -1.4 0 0;
-}
-
-.bg-blue {
-  background: $blue;
-}
-
-.hide-sm {
-  @media (max-width: $screen-md - 0.5) {
-    display: none;
+@media (max-width: 1024px) {
+  html {
+    font-size: 13px;
   }
 }
-
-.hide-md {
-  @media (min-width: $screen-md) {
-    display: none;
-  }
-}
-
-.title {
-  font-size: 32px;
-
-  @media (min-width: $screen-md) {
-    font-size: 40px;
-  }
-}
-
-.text-title {
-  font-size: 24px;
-
-  @media (min-width: $screen-md) {
-    font-size: 30px;
-  }
-}
-
-.text-description {
-  font-size: 12px;
-  line-height: 1.7;
-
-  @media (min-width: $screen-md) {
-    font-size: 15px;
-  }
-}
-
-.text-center {
-  text-align: center;
-}
-
-.neon-sign {
-  color: $white;
-  font-size: 48px;
-  text-align: center;
-  user-select: none;
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #76b0ff, 0 0 0.5em #76b0ff,
-    0 0 0.1em #76b0ff, 0 10px 3px $black;
-  filter: contrast(1.2);
-
-  @media (min-width: $screen-md) {
-    font-size: 60px;
-  }
-
-  span {
-    animation: blink linear infinite 2s;
-
-    &:nth-of-type(2) {
-      animation: blink linear infinite 3s;
-    }
-  }
-}
-
-@keyframes blink {
-  78% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-  79% {
-    color: $blue;
-  }
-  80% {
-    text-shadow: none;
-  }
-  81% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-  82% {
-    color: #333;
-    text-shadow: none;
-  }
-  83% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-  92% {
-    color: #333;
-    text-shadow: none;
-  }
-  92.5% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-}
-
-@import "./components/topbar";
-@import "./components/footer";

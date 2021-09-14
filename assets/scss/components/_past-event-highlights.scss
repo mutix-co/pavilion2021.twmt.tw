@@ -1,0 +1,23 @@
+.past-event-highlights {
+  height: 956px;
+  background: linear-gradient(90deg, #fff 55%, #3a1e10 55%);
+  position: relative;
+  margin-top: 600px;
+  background-size: auto 100%;
+
+  .title {
+    color: #fff;
+    margin-left: 60%;
+    padding-top: 100px;
+  }
+
+  .description {
+    width: 45%;
+    margin-left: 40%;
+    background: #BE9266;
+    color: #fff;
+    margin-top: 50px;
+    padding: 50px;
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,27 @@
+.event-profile {
+  height: 956px;
+  background: linear-gradient(90deg, #be9265 45%, #fff 45%);
+  position: relative;
+}
+
+.event-profile .title {
+  padding-top: 50px;
+  padding-left: 10%;
+  width: 45%;
+  color: #fff;
+}
+
+.event-profile img {
+  width: 45%;
+  position: absolute;
+  top: 240px;
+  left: 10%;
+}
+
+.event-profile .description {
+  width: calc(45% - 45px);
+  position: absolute;
+  top: 240px;
+  left: calc(55% + 15px);
+  color: #000;
+}

@@ -1,0 +1,44 @@
+@import "./size";
+
+.events {
+  position: relative;
+  max-width: 1920px;
+  min-height: 886px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -1px;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-color: #42210b;
+  background-size: 1370px 886px;
+  background-position: right bottom;
+  background-image: url("~/assets/images/events-bg.png");
+  border: none;
+
+  & > .title {
+    color: #fff;
+    text-align: center;
+  }
+}
+
+.progress {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+
+  & > li {
+    text-align: center;
+    width: 200px;
+    margin-top: 40px;
+  }
+
+  .progress-name {
+    color: #c69c6d;
+  }
+
+  .progress-information {
+    color: #fff;
+  }
+}
