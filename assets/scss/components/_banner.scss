@@ -18,25 +18,11 @@
 }
 
 .banner-icons {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 54vw;
-  bottom: 6vw;
   display: flex;
   justify-content: center;
-  margin: auto;
+  margin: -17.5% auto 17.5%;
   color: #3A1E10;
   opacity: 0.5;
-
-  @media (min-width: $screen-md) {
-    top: 50vw;
-  }
-
-  @media (min-width: $screen-max) {
-    top: 60%;
-    bottom: 6%;
-  }
 
   li {
     display: flex;
@@ -153,5 +139,10 @@
     width: 50px;
     height: 50px;
     object-fit: contain;
+
+    @media (min-width: $screen-lg) {
+      width: 80px;
+      height: 80px;
+    }
   }
 }
