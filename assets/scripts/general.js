@@ -39,7 +39,7 @@ document.addEventListener('click', function (e) {
       if(t.total<=0){
         clearInterval(timeinterval);
       }
-    },10000);
+    }, 1000);
   }
 
   var target = new Date('2021-09-23T00:00:00.000Z');
