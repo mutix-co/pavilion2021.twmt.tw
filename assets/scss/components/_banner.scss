@@ -2,11 +2,10 @@
 
 .banner {
   position: relative;
-  max-width: 1920px;
   min-height: 400px;
   width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 0 6%;
   background-color: #42210b;
   border: none;
   overflow: hidden;
@@ -14,87 +13,74 @@
   & > img {
     width: 100%;
     border: none;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    border: none;
-    background-size: cover;
-    background-position: top center;
-    background-image: url("~/assets/images/banner.png");
+    filter: drop-shadow(0 25px 30px rgba(0, 0, 0, 0.5));
   }
 }
 
 .banner-icons {
-  display: flex;
-  justify-content: center;
   position: absolute;
   left: 0;
-  bottom: 22%;
-  width: 100%;
+  right: 0;
+  top: 54vw;
+  bottom: 6vw;
+  display: flex;
+  justify-content: center;
+  margin: auto;
   color: #3A1E10;
-  opacity: .5;
+  opacity: 0.5;
 
-  & > li {
+  @media (min-width: $screen-md) {
+    top: 50vw;
+  }
+
+  @media (min-width: $screen-max) {
+    top: 60%;
+    bottom: 6%;
+  }
+
+  li {
     display: flex;
     align-items: center;
+    margin: 0 10px;
 
-    & > p {
-      padding: 0 20px;
+    @media (min-width: $screen-md) {
+      margin: 0;
+
+      &:last-child {
+        margin: 0 -5% 0 0;
+      }
     }
   }
-}
 
-.nav {
-  position: absolute;
-  top: 3%;
-  right: 10%;
-  display: flex;
-
-  a {
-    color: #42210B;
-    border-left: 1px solid #42210B;
-    padding: 0 10px;
-
-    &:first-child {
-      border: none;
-    }
-  }
-}
-
-@media (max-width: 1024px) {
-  .banner-icons img {
+  img {
     width: 40px;
-  }
+    height: 40px;
 
-  .nav {
-    flex-direction: column;
-
-    & > a {
-      border: none;
-      padding: 3px 10px;
-      border-top: 1px solid #42210B;
+    @media (min-width: $screen-md) {
+      width: 60px;
+      height: 60px;
     }
-  }
-}
 
-@media (max-width: 640px) {
-  .banner-icons {
-    flex-direction: column;
-    bottom: 15%;
-
-    & > li {
-      margin: 0 auto;
-      height: 24px;
+    @media (min-width: $screen-lg) {
+      width: 90px;
+      height: 90px;
     }
   }
 
-  .banner-icons img {
-    width: 20px;
+  p {
+    display: none;
+    margin: 0 10px 0 0;
+    padding: 0 10px 0 0;
+
+    @media (min-width: $screen-md) {
+      display: block;
+      margin: 0 15px 0 0;
+      padding: 0 15px 0 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin: 0 20px 0 0;
+      padding: 0 20px 0 0;
+    }
   }
 }

@@ -1,27 +1,55 @@
 .event-profile {
-  height: 956px;
-  background: linear-gradient(90deg, #be9265 45%, #fff 45%);
-  position: relative;
-}
+  @media (min-width: $screen-md) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 15%;
+  }
 
-.event-profile .title {
-  padding-top: 50px;
-  padding-left: 10%;
-  width: 45%;
-  color: #fff;
-}
+  @media (min-width: $screen-lg) {
+    margin: 0 0 10%;
+  }
 
-.event-profile img {
-  width: 45%;
-  position: absolute;
-  top: 240px;
-  left: 10%;
-}
+  @media (min-width: $screen-xl) {
+    margin: 0 0 15%;
+  }
 
-.event-profile .description {
-  width: calc(45% - 45px);
-  position: absolute;
-  top: 240px;
-  left: calc(55% + 15px);
-  color: #000;
+  .title {
+    padding: 7% 0 6% 8%;
+    color: #fff;
+    font-size: 3rem;
+    background-color: #be9265;
+
+    @media (min-width: $screen-md) {
+      width: 42%;
+      margin: 0 58% calc(20px - 40%) 0;
+      padding: 8% 5% 40%;
+    }
+  }
+
+  img {
+    display: block;
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      align-self: flex-start;
+      width: 40%;
+      margin: 0 0 0 5%;
+    }
+  }
+
+  .description {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    @media (min-width: $screen-md) {
+      width: 50%;
+      padding: 0 20px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 48%;
+      margin: 0 0 0 3%;
+    }
+  }
 }

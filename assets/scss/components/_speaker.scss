@@ -18,10 +18,13 @@
   li {
     flex-shrink: 0;
     position: relative;
-    width: 40%;
+    width: 60%;
     max-width: 509px;
     margin: 0 15px;
 
+    @media (min-width: $screen-md) {
+      width: 40%;
+    }
 
     &::before {
       content: "Woodworking Show Speaker";
@@ -29,8 +32,12 @@
       top: 0;
       left: 0;
       right: 0;
-      padding: 5%;
+      padding: 8%;
       font-size: 0.5rem;
+
+      @media (min-width: $screen-md) {
+        padding: 5%;
+      }
     }
   }
 
@@ -46,8 +53,12 @@
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 50px 5% 5%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0) 80%)
+  padding: 50px 8% 6%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0) 80%);
+
+  @media (min-width: $screen-md) {
+    padding: 50px 5% 5%;
+  }
 }
 
 .speaker-name {
