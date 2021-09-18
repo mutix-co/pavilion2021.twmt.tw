@@ -1,8 +1,8 @@
 .speaker {
-  margin-top: 100px;
+  margin: 50px 0 80px;
 
   .title {
-    color: #754C24;
+    color: #754c24;
     text-align: center;
     padding: 2rem 0;
   }
@@ -13,42 +13,59 @@
   width: 100%;
   overflow-y: auto;
   padding: 0 10%;
+  color: #fff;
 
-  & > li {
+  li {
+    flex-shrink: 0;
     position: relative;
-    width: 509px;
-    height: 654px;
-    margin-left: 40px;
+    width: 60%;
+    max-width: 300px;
+    margin: 0 15px;
+
+    @media (min-width: $screen-md) {
+      width: 40%;
+    }
+
+    &::before {
+      content: "Woodworking Show Speaker";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 8%;
+      font-size: 0.5rem;
+      text-shadow: 0 0 5px #555, 0 0 6px #555;
+
+      @media (min-width: $screen-md) {
+        padding: 5%;
+      }
+    }
   }
 
   img {
+    display: block;
     width: 100%;
-    width: 509px;
-    height: 654px;
     object-fit: cover;
   }
 }
 
-.speaker-label {
+.speaker-text {
   position: absolute;
-  top: 1%;
-  left: 2%;
-  color: #fff;
-  font-size: .5rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 50px 8% 6%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 0) 80%);
+
+  @media (min-width: $screen-md) {
+    padding: 50px 5% 5%;
+  }
 }
 
 .speaker-name {
-  position: absolute;
-  bottom: 5%;
-  left: 2%;
-  color: #fff;
   font-size: 1.5rem;
 }
 
 .speaker-team {
-  position: absolute;
-  bottom: 1%;
-  left: 2%;
-  color: #fff;
   font-size: 1rem;
 }

@@ -2,43 +2,71 @@
 
 .events {
   position: relative;
-  max-width: 1920px;
-  min-height: 886px;
   width: 100%;
+  max-width: 1920px;
   margin: 0 auto;
-  margin-top: -1px;
-  padding: 0;
-  background-repeat: no-repeat;
-  background-color: #42210b;
-  background-size: 1370px 886px;
-  background-position: right bottom;
-  background-image: url("~/assets/images/events-bg.png");
   border: none;
+  padding: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  background: #42210b url("~/assets/images/events-bg.png") right bottom no-repeat;
+  background-size: 80%;
 
-  & > .title {
-    color: #fff;
+  @media (min-width: $screen-md) {
+    padding-top: 30px;
+  }
+
+  .title {
     text-align: center;
   }
 }
 
 .progress {
   display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
   flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin: 50px auto 0;
   padding-bottom: 40px;
+
+  @media (min-width: $screen-md) {
+    width: 600px;
+  }
+
+  @media (min-width: $screen-xl) {
+    width: 1200px;
+  }
 
   & > li {
     text-align: center;
     width: 200px;
-    margin-top: 40px;
+    padding: 20px 0 0;
+    margin: 0 10px 40px;
+
+    @media (min-width: $screen-md) {
+      margin: 0 10px 60px;
+    }
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+
+    @media (min-width: $screen-md) {
+      width: 130px;
+      height: 130px;
+    }
   }
 
   .progress-name {
+    margin: 20px 0;
     color: #c69c6d;
+    font-weight: 500;
+    white-space: nowrap;
   }
 
   .progress-information {
-    color: #fff;
+    margin: 0;
+    font-size: 0.8em;
   }
 }

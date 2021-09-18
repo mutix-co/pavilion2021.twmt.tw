@@ -1,23 +1,48 @@
 .past-event-highlights {
-  height: 956px;
-  background: linear-gradient(90deg, #fff 55%, #3a1e10 55%);
-  position: relative;
-  margin-top: 600px;
-  background-size: auto 100%;
+  @media (min-width: $screen-md) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media (min-width: $screen-lg) {
+    justify-content: flex-end;
+  }
 
   .title {
+    padding: 10% 0 6% 8%;
     color: #fff;
-    margin-left: 60%;
-    padding-top: 100px;
+    font-size: 3rem;
+    background-color: #3a1e10;
+
+    @media (min-width: $screen-md) {
+      width: 45%;
+      padding: 8% 5% 50%;
+      margin: 0 0 0 55%;
+    }
+
+    @media (min-width: $screen-lg) {
+      order: 1;
+      margin: 0;
+      padding-bottom: 0;
+    }
   }
 
   .description {
-    width: 45%;
-    margin-left: 40%;
-    background: #BE9266;
+    padding: 10px 20px;
     color: #fff;
-    margin-top: 50px;
-    padding: 50px;
     font-size: 1.2rem;
+    font-weight: 400;
+    background: #be9266;
+
+    @media (min-width: $screen-md) {
+      align-self: flex-start;
+      width: 90%;
+      margin: -45% auto 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      z-index: 1;
+      width: 60%;
+      margin: calc(200px + 8%) -25% 8% 15%;
+    }
   }
 }

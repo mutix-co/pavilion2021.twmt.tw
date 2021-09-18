@@ -12,3 +12,121 @@
 @import "./components/contact-us";
 @import "./components/logos";
 @import "./components/footer";
+
+.float-register {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 80px;
+  height: 80px;
+
+  @media (min-width: $screen-md) {
+    width: 100px;
+    height: 100px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+
+  &.tabs--margin-bottom {
+    margin-bottom: 30px;
+  }
+
+  .tab {
+    width: 150px;
+    margin: 0 10px;
+    border: 0;
+    padding: 10px 20px;
+    color: #be9266;
+    font-size: 1.5em;
+    text-align: center;
+    background: transparent;
+    cursor: pointer;
+    transition: color 0.3s, background 0.3s;
+
+    &:hover {
+      color: #fff;
+      background: #be9266;
+    }
+  }
+
+  &[data-active="1"] .tab[data-active="1"],
+  &[data-active="2"] .tab[data-active="2"] {
+    color: #fff;
+    background: #42210b;
+  }
+}
+
+.tabs[data-active="1"] + .tab-content + .tab-content,
+.tabs[data-active="2"] + .tab-content {
+  display: none;
+}
+
+.nav {
+  position: fixed;
+  top: 4%;
+  right: 4%;
+  z-index: 10;
+  transition: background 0.3s;
+
+  @media (min-width: $screen-md) {
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 1.2em;
+
+    &.active {
+      background: #724418;
+      box-shadow: 0 0 15px rgb(0, 0, 0, 0.3);
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    @media (min-width: $screen-md) {
+      flex-direction: row;
+      align-items: center;
+      height: 100px;
+      padding: 0 5%;
+    }
+  }
+
+  a {
+    padding: 5px 10px;
+    color: #42210b;
+    text-shadow: 0 0 5px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff, 0 0 6px #fff;
+    transition: color 0.3s;
+
+    @media (min-width: $screen-md) {
+      border-left: 1px solid;
+      padding: 2px 10px;
+      text-shadow: none;
+
+      &:first-child {
+        border: none;
+      }
+    }
+
+    @media (min-width: $screen-lg) {
+      padding: 2px 20px;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    &.active a {
+      color: #fff;
+    }
+  }
+
+}
