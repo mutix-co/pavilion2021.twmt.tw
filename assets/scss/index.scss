@@ -13,6 +13,44 @@
 @import "./components/logos";
 @import "./components/footer";
 
+.tabs {
+  display: flex;
+  justify-content: center;
+
+  &.tabs--margin-bottom {
+    margin-bottom: 30px;
+  }
+
+  .tab {
+    width: 150px;
+    margin: 0 10px;
+    border: 0;
+    padding: 10px 20px;
+    color: #be9266;
+    font-size: 1.5em;
+    text-align: center;
+    background: transparent;
+    cursor: pointer;
+    transition: color 0.3s, background 0.3s;
+
+    &:hover {
+      color: #fff;
+      background: #be9266;
+    }
+  }
+
+  &[data-active="1"] .tab[data-active="1"],
+  &[data-active="2"] .tab[data-active="2"] {
+    color: #fff;
+    background: #42210b;
+  }
+}
+
+.tabs[data-active="1"] + .tab-content + .tab-content,
+.tabs[data-active="2"] + .tab-content {
+  display: none;
+}
+
 .nav {
   position: fixed;
   top: 4%;
@@ -24,6 +62,7 @@
     top: 0;
     left: 0;
     right: 0;
+    font-size: 1.2em;
 
     &.active {
       background: #724418;
@@ -59,7 +98,10 @@
       &:first-child {
         border: none;
       }
+    }
 
+    @media (min-width: $screen-lg) {
+      padding: 2px 20px;
     }
   }
 

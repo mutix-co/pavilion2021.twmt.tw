@@ -6,6 +6,14 @@ window.onscroll = function () {
 
 
 
+// var buttons = document.querySelectorAll('.tab');
+document.addEventListener('click', function (e) {
+  var button = e.target;
+  button.parentNode.dataset.active = button.dataset.active;
+});
+
+
+
 // timer
 (function init() {
   function getTimeRemaining(endtime) {

@@ -52,7 +52,7 @@
     margin: -250px auto 0;
   }
 
-  li {
+  ul > li {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -70,6 +70,14 @@
 
     &:nth-child(even) {
       background: #F5F3F6;
+    }
+  }
+
+  ol {
+    margin: 10px 0 10px -10px;
+
+    > li {
+      margin: 5px 0;
     }
   }
 }
