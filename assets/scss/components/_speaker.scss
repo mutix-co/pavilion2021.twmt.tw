@@ -27,7 +27,6 @@
     }
 
     &::before {
-      content: "Woodworking Show Speaker";
       position: absolute;
       top: 0;
       left: 0;
@@ -40,6 +39,9 @@
         padding: 5%;
       }
     }
+
+    &.woodworking::before { content: "Woodworking Show Speaker"; }
+    &.robot::before { content: "Robot Show Speaker"; }
   }
 
   img {

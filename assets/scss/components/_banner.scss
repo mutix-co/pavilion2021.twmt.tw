@@ -2,10 +2,9 @@
 
 .banner {
   position: relative;
-  min-height: 400px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 0 6%;
+  padding: 0 0 60px;
   background-color: #42210b;
   border: none;
   overflow: hidden;
@@ -14,60 +13,6 @@
     width: 100%;
     border: none;
     filter: drop-shadow(0 25px 30px rgba(0, 0, 0, 0.5));
-  }
-}
-
-.banner-icons {
-  display: flex;
-  justify-content: center;
-  margin: -17.5% auto 17.5%;
-  color: #3A1E10;
-  opacity: 0.5;
-
-  li {
-    display: flex;
-    align-items: center;
-    margin: 0 10px;
-
-    @media (min-width: $screen-md) {
-      margin: 0;
-
-      &:last-child {
-        margin: 0 -5% 0 0;
-      }
-    }
-  }
-
-  img {
-    width: 40px;
-    height: 40px;
-
-    @media (min-width: $screen-md) {
-      width: 60px;
-      height: 60px;
-    }
-
-    @media (min-width: $screen-lg) {
-      width: 90px;
-      height: 90px;
-    }
-  }
-
-  p {
-    display: none;
-    margin: 0 10px 0 0;
-    padding: 0 10px 0 0;
-
-    @media (min-width: $screen-md) {
-      display: block;
-      margin: 0 15px 0 0;
-      padding: 0 15px 0 0;
-    }
-
-    @media (min-width: $screen-lg) {
-      margin: 0 20px 0 0;
-      padding: 0 20px 0 0;
-    }
   }
 }
 
