@@ -6,10 +6,20 @@ window.onscroll = function () {
 
 
 
-// var buttons = document.querySelectorAll('.tab');
 document.addEventListener('click', function (e) {
-  var button = e.target;
+  var button = e.target.closest('.tab');
   button.parentNode.dataset.active = button.dataset.active;
+});
+
+
+
+var modal = document.getElementById('speaker-modal');
+document.addEventListener('click', function (e) {
+  var speakerLi = e.target.closest('.speaker li');
+  modal.dataset.active = speakerLi.dataset.active || "";
+});
+modal.addEventListener('click', function () {
+  modal.dataset.active = "";
 });
 
 
@@ -36,8 +46,10 @@ document.addEventListener('click', function (e) {
       document.querySelector(".days > .value").innerText=t.days;
       document.querySelector(".hours > .value").innerText=t.hours;
       document.querySelector(".minutes > .value").innerText=t.minutes;
+
       if(t.total<=0){
         clearInterval(timeinterval);
+        document.querySelector('.counter').remove();
       }
     }, 1000);
   }

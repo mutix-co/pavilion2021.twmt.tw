@@ -71,3 +71,43 @@
 .speaker-team {
   font-size: 1rem;
 }
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  display: none;
+  background: #fff;
+
+  &[data-active="1"],
+  &[data-active="2"],
+  &[data-active="3"],
+  &[data-active="4"],
+  &[data-active="5"],
+  &[data-active="6"],
+  &[data-active="7"] {
+    display: flex;
+  }
+
+  img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &[data-active="1"] img:nth-child(1),
+  &[data-active="2"] img:nth-child(2),
+  &[data-active="3"] img:nth-child(3),
+  &[data-active="4"] img:nth-child(4),
+  &[data-active="5"] img:nth-child(5),
+  &[data-active="6"] img:nth-child(6),
+  &[data-active="7"] img:nth-child(7) {
+    display: block;
+  }
+}
