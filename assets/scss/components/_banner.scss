@@ -24,6 +24,7 @@
   right: 5%;
   display: none;
   justify-content: center;
+  display: none;
   width: 50%;
   padding: 30px 15px;
   color: #fff;
@@ -33,7 +34,9 @@
   border-radius: 30px;
 
   @media (min-width: $screen-md) {
-    display: flex;
+    &.active {
+      display: flex;
+    }
   }
 
   > div {

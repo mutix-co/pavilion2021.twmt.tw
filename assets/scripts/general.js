@@ -43,20 +43,28 @@ modal.addEventListener('click', function () {
   function initializeClock(endtime){
     var timeinterval = setInterval(function(){
       var t = getTimeRemaining(endtime);
-      document.querySelector(".days > .value").innerText=t.days;
-      document.querySelector(".hours > .value").innerText=t.hours;
-      document.querySelector(".minutes > .value").innerText=t.minutes;
 
       if(t.total<=0){
         clearInterval(timeinterval);
         document.querySelector('.counter').remove();
+        return;
       }
+
+      document.querySelector(".days > .value").innerText=t.days;
+      document.querySelector(".hours > .value").innerText=t.hours;
+      document.querySelector(".minutes > .value").innerText=t.minutes;
     }, 1000);
   }
 
   var target = new Date('2021-09-23T00:00:00.000Z');
 
   var t = getTimeRemaining(target);
+
+  if (t.total<=0) {
+    return;
+  }
+
+  document.querySelector('.counter').classList.add('active');
   document.querySelector(".days > .value").innerText=t.days;
   document.querySelector(".hours > .value").innerText=t.hours;
   document.querySelector(".minutes > .value").innerText=t.minutes;
