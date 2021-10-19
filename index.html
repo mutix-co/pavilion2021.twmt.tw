@@ -18,15 +18,7 @@
       type="image/png"
       href="~/assets/images/icon.png"
     />
-    <style>
-      body { position: relative; max-width: 1280px; margin: 0 auto; }
-      img { display: block; width: 100%; }
-      a { position: absolute; display: block; height: 30px; font-size: 0; }
-      a:nth-of-type(1) { top: 68.7%; left: 4.3%; right: 71.5%; }
-      a:nth-of-type(2) { top: 69.8%; left: 52.5%; right: 22.1%; }
-      a:nth-of-type(3) { top: 88.65%; left: 62%; right: 13.5%; }
-      a:nth-of-type(4) { height: initial; left: 4.5%; right: 4.5%; bottom: 5%; }
-    </style>
+    <link rel="stylesheet" href="./assets/scss/index.scss" />
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJH6W4H2E5"></script>
     <script>
@@ -37,12 +29,25 @@
     </script>
   </head>
   <body>
-    <img src="~/assets/images/edm/page--2021-10-18.jpg" alt="" />
-    <a target="_blank" href="https://youtu.be/kQcM-frEhL8">https://youtu.be/kQcM-frEhL8</a>
-    <a target="_blank" href="https://youtu.be/SDc8X8smeBY">https://youtu.be/SDc8X8smeBY</a>
-    <a target="_blank" href="https://youtu.be/vK8juPfhHkA">https://youtu.be/vK8juPfhHkA</a>
-    <a target="_blank" href="https://twmt-hubspot.mutix.site/home">
-      <img src="~/assets/images/edm/button--2021-10-18.jpg" alt="" />
+    <div class="nav">
+      <div class="container">
+        <a href="#event-profile">About</a>
+        <a href="#conference-program">Webinar</a>
+        <a href="#logos">Exhibit</a>
+        <a href="#footer">Contact</a>
+        <a href="https://twmt-hubspot.mutix.site/register">Register/Login</a>
+      </div>
+    </div>
+    <include src="./components/banner.html"></include>
+    <include src="./components/events.html"></include>
+    <include src="./components/register.html"></include>
+    <include src="./components/main.html"></include>
+    <include src="./components/footer.html"></include>
+
+    <a class="float-register" href="https://twmt-hubspot.mutix.site/register" target="_blank">
+      <img src="~/assets/images/register.png" alt="" />
     </a>
+
+    <script async src="~/assets/scripts/general.js"></script>
   </body>
 </html>

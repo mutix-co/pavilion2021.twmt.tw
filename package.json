@@ -4,7 +4,7 @@
   "repository": "git@github.com:mutix-co/twmt.mutix.site.git",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel index.html --port 3000",
+    "dev": "parcel *.html --port 3000",
     "build": "rm -rf dist .cache && parcel build *.html --no-source-maps && cp CNAME ./dist",
     "deploy": "npm run build && gh-pages -d dist"
   },
