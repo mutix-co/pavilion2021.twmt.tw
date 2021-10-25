@@ -18,7 +18,7 @@
       type="image/png"
       href="~/assets/images/icon.png"
     />
-    <link rel="stylesheet" href="./assets/scss/woodworking.scss" />
+    <link rel="stylesheet" href="./assets/scss/index.scss" />
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BJH6W4H2E5"></script>
     <script>
@@ -29,9 +29,45 @@
     </script>
   </head>
   <body>
-    <include src="./components/woodworking/banner.html"></include>
-    <include src="./components/woodworking/events.html"></include>
-    <include src="./components/woodworking/main.html"></include>
-    <include src="./components/footer.html"></include>
+    <include src="./components/topbar.html"></include>
+
+    <main>
+      <ul class="links">
+        <li>
+          <a class="link" href="###">
+            <span>Robotic</span>
+            <div class="link__img"><img src="~/assets/images/index/1.png" alt="Robotic" /></div>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="/woodworking">
+            <span>Woodworking</span>
+            <div class="link__img"><img src="~/assets/images/index/2.png" alt="Woodworking" /></div>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="/machinetool">
+            <span>Machine Tool</span>
+            <div class="link__img"><img src="~/assets/images/index/3.png" alt="Machine Tool" /></div>
+          </a>
+        </li>
+        <li>
+          <a class="link" href="###">
+            <span>Plastics & Rubber Industry Pavilion</span>
+            <div class="link__img"></div>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="pagination" data-active="1">
+        <li data-active="1"></li>
+        <li data-active="2"></li>
+        <li data-active="3"></li>
+        <li data-active="4"></li>
+      </ul>
+    </main>
+
+    <script src="~/assets/scripts/topbar.js"></script>
+    <script src="~/assets/scripts/index.js"></script>
   </body>
 </html>
