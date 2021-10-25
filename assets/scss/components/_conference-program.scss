@@ -10,7 +10,7 @@
 
 .program__header {
   padding: 24px 20px;
-  color: #fff;
+  color: var(--white);
   font-weight: 400;
   white-space: nowrap;
 }
@@ -42,7 +42,7 @@
 
 
     &:nth-child(1) {
-      color: #c2996b;
+      color: var(--main);
     }
 
     &:nth-child(2) {

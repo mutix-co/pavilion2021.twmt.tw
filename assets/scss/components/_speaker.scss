@@ -1,7 +1,7 @@
 .speakers {
   display: flex;
   margin: 0 0 90px;
-  color: #fff;
+  color: var(--white);
   overflow-x: auto;
 
   @media (min-width: 1189px) {
@@ -44,7 +44,7 @@
       font-size: 0.5rem;
       background:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 25%),
-        linear-gradient(to top, #000 0%, rgba(0, 0, 0, 0) 33.3%);
+        linear-gradient(to top, var(--black) 0%, rgba(0, 0, 0, 0) 33.3%);
     }
     &.woodworking::before { content: "Woodworking Show Speaker"; }
     &.robot::before { content: "Robot Show Speaker"; }

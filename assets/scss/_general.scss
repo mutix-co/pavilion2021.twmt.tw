@@ -1,5 +1,4 @@
 @import "./size";
-@import "./color";
 
 * {
   box-sizing: border-box;
@@ -18,8 +17,8 @@ html {
 
 body {
   margin: 0;
-  color: #000;
-  background: #fff;
+  color: var(--black);
+  background: var(--white);
   overflow-x: hidden;
 }
 
@@ -41,7 +40,7 @@ ul {
 
 a {
   outline: 0;
-  color: $white;
+  color: var(--white);
   text-decoration: none;
   background-color: transparent;
 }
@@ -56,7 +55,7 @@ a {
 
 h2 {
   margin: 65px 0 40px;
-  color: #42210b;
+  color: var(--main-dark);
   font-size: 36px;
   font-weight: 900;
   font-family: Roboto, "PingFang TC", "Microsoft JhengHei", "微軟正黑體",
@@ -67,5 +66,5 @@ h2 {
   letter-spacing: 0.05em;
 }
 
-.bg-dark { background: #42210b; }
-.bg-main { background: #c2996b; }
+.bg-dark { background: var(--main-dark); }
+.bg-main { background: var(--main); }

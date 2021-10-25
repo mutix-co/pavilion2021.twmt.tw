@@ -1,3 +1,10 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --main: #c2996b;
+  --main-dark: #42210b;
+}
+
 @import "./general";
 @import "./components/banner";
 @import "./components/events";
@@ -9,3 +16,21 @@
 @import "./components/event-highlights";
 @import "./components/logos";
 @import "./components/footer";
+
+.float-register {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 80px;
+  height: 80px;
+
+  @media (min-width: $screen-md) {
+    width: 100px;
+    height: 100px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
