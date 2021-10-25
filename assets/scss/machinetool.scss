@@ -1,0 +1,18 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --main: #3eb5d9;
+  --main-dark: #005f84;
+}
+
+@import "./general";
+@import "./components/banner";
+@import "./components/events";
+@import "./components/main";
+@import "./components/event-profile";
+@import "./components/press-conference";
+@import "./components/speaker";
+@import "./components/conference-program";
+@import "./components/event-highlights";
+@import "./components/logos";
+@import "./components/footer";

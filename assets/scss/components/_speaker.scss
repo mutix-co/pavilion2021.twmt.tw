@@ -47,6 +47,7 @@
         linear-gradient(to top, var(--black) 0%, rgba(0, 0, 0, 0) 33.3%);
     }
     &.woodworking::before { content: "Woodworking Show Speaker"; }
+    &.machinetool::before { content: "Machine Tool Show Speaker"; }
     &.robot::before { content: "Robot Show Speaker"; }
   }
 

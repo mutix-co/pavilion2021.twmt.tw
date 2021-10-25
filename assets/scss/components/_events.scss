@@ -7,7 +7,6 @@
   padding: 0 0 20px;
   color: var(--white);
   font-size: 1.2rem;
-  background-image: url("~/assets/images/events/bg-woodworking.png");
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: 90%;
@@ -19,6 +18,14 @@
   @media (min-width: $screen-xl) {
     padding: 0 0 120px;
     background-size: 600px;
+  }
+
+  &.woodworking {
+    background-image: url("~/assets/images/events/bg-woodworking.png");
+  }
+
+  &.machinetool {
+    background-image: url("~/assets/images/events/bg-machinetool.png");
   }
 }
 
