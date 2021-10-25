@@ -1,55 +1,64 @@
-.event-profile {
+.profile__title {
+  margin: 0;
+  padding: 40px 0 0;
+  color: #fff;
+
   @media (min-width: $screen-md) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 0 15%;
+    padding: 65px 0 0;
+  }
+}
+
+.event-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 78%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4;
+
+  @media (min-width: $screen-md) {
+    padding: 50px 0 85px;
   }
 
   @media (min-width: $screen-lg) {
-    margin: 0 0 10%;
+    flex-direction: row;
+    width: 90%;
   }
 
   @media (min-width: $screen-xl) {
-    margin: 0 0 15%;
-  }
-
-  .title {
-    padding: 7% 0 6% 8%;
-    color: #fff;
-    font-size: 3rem;
-    background-color: #be9265;
-
-    @media (min-width: $screen-md) {
-      width: 42%;
-      margin: 0 58% calc(20px - 40%) 0;
-      padding: 8% 5% 40%;
-    }
+    width: 78%;
   }
 
   img {
-    display: block;
     width: 100%;
+    height: 340px;
+    margin: 0 0 24px;
+    object-fit: cover;
 
     @media (min-width: $screen-md) {
-      align-self: flex-start;
-      width: 40%;
-      margin: 0 0 0 5%;
-    }
-  }
-
-  .description {
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    font-weight: 400;
-
-    @media (min-width: $screen-md) {
-      width: 50%;
-      padding: 0 20px;
+      margin: 0 0 32px;
     }
 
     @media (min-width: $screen-lg) {
-      width: 48%;
-      margin: 0 0 0 3%;
+      flex-shrink: 1;
+      width: 50%;
+      margin: 0 60px 0 0;
+    }
+
+    @media (min-width: $screen-xxl) {
+      width: 685px;
+    }
+  }
+
+  p {
+    margin: 0;
+    &:not(:first-child) {
+      margin: 1.5em 0 0;
     }
   }
 }

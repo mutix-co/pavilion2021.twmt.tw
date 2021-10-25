@@ -1,0 +1,71 @@
+.event-highlights {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+
+  @media (min-width: $screen-lg) {
+    flex-direction: row;
+    width: 83%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+
+  img {
+    width: 100%;
+    flex-shrink: 0;
+    align-self: flex-start;
+
+    @media (min-width: $screen-lg) {
+      width: 40%;
+      margin: 0 0 0 85px;
+    }
+
+    @media (min-width: $screen-xxl) {
+      width: 600px;
+      margin: 0 0 0 85px;
+    }
+  }
+}
+
+.event-highlights__main {
+  width: 78%;
+  margin: 0 auto;
+  padding: 40px 0;
+
+  @media (min-width: $screen-md) {
+    padding: 70px 0;
+  }
+
+  @media (min-width: $screen-lg) {
+    align-self: center;
+    padding: 0;
+  }
+
+  h2 {
+    margin: 0 0 30px;
+    line-height: 1.2;
+    text-align: left;
+  }
+
+  h3 {
+    margin: -20px 0 30px;
+    font-size: 20px;
+  }
+
+  b {
+    display: block;
+    margin: 0 0 8px;
+    font-size: 20px;
+  }
+
+  p {
+    margin: 0;
+
+    &:not(:first-child) {
+      margin: 20px 0 0;
+    }
+  }
+}

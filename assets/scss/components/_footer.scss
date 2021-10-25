@@ -1,43 +1,123 @@
 .footer {
-  padding: 25px 0;
-  background-repeat: no-repeat;
-  background-color: #3A1E10;
-  background-position: right 5% bottom 10px;
-  background-size: 20%;
-  background-image: url("~/assets/images/footer-bg.png");
+  padding: 55px 0;
   color: #fff;
+  background-color: #3a1e10;
   overflow: hidden;
 
-  & img {
-    max-width: 100%;
+  hr {
+    margin: 30px 0;
   }
 }
 
-.footer-information {
+.footer-box {
+  width: 80%;
+  margin: 0 auto;
+
+  @media (min-width: $screen-lg) {
+    display: flex;
+  }
+
+  @media (min-width: $screen-xl) {
+    max-width: 1200px;
+  }
+}
+
+.footer__main {
+  flex-grow: 1;
+}
+
+.footer__information {
+  @media (min-width: $screen-xl) {
+    display: flex;
+  }
+}
+
+.footer__links {
   display: flex;
-  margin: 0 30% 0 10%;
-  border-bottom: 1px solid #fff;
-  padding: 40px 0;
-  flex-wrap: wrap;
+  flex-direction: column;
+  width: 185px;
+}
+.footer__links__social {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0 0;
+
+  img {
+    display: block;
+    width: 45px;
+    height: 45px;
+  }
 }
 
-.footer-contact-us {
-  padding: 0 30px;
+.footer__contact {
+  margin: 30px 0 0;
+  font-weight: 300;
+  line-height: 1.5;
+
+  @media (min-width: $screen-xl) {
+    margin: 0 0 0 120px;
+  }
+
+  p {
+    margin: 0;
+
+    &:first-child {
+      margin: 0 0 10px;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+  }
 }
 
-.footer-groups {
-  margin: 0 30% 0 10%;
-  padding: 40px 0;
+.footer__groups {
+  display: flex;
+  justify-content: space-between;
+  height: 8vw;
+  max-height: 40px;
+  margin: 0 -12px;
+
+  @media (min-width: $screen-md) {
+    height: 65px;
+    max-height: initial;
+  }
+
+  @media (min-width: $screen-lg) {
+    justify-content: flex-start;
+    margin: 0 -35px;
+  }
+
+  img {
+    margin: 0 13px;
+
+    @media (min-width: $screen-lg) {
+      margin: 0 35px;
+    }
+  }
 }
 
-.footer-copyright {
+.footer__bg {
+  align-self: center;
+  width: 200px;
+  margin: 30px 0 0;
+
+  @media (min-width: $screen-lg) {
+    width: 180px;
+    margin: 100px 0 0 24px;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin: 0 0 0 24px;
+  }
+}
+
+.footer__copyright {
+  margin: 30px 0 -25px;
   color: #f3f3f3;
-  text-align: center;
   font-size: .5rem;
-}
+  text-align: center;
 
-@media (max-width: 640px) {
-  .footer-information {
-    margin: 0 10%;
+  @media (min-width: $screen-lg) {
+    margin: 70px 0 -25px;
   }
 }

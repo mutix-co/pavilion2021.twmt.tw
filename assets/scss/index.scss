@@ -1,15 +1,12 @@
 @import "./general";
 @import "./components/banner";
 @import "./components/events";
-@import "./components/register";
 @import "./components/main";
 @import "./components/event-profile";
 @import "./components/press-conference";
 @import "./components/speaker";
 @import "./components/conference-program";
-@import "./components/current-event-highlights";
-@import "./components/past-event-highlights";
-@import "./components/contact-us";
+@import "./components/event-highlights";
 @import "./components/logos";
 @import "./components/footer";
 
@@ -29,44 +26,6 @@
     display: block;
     width: 100%;
   }
-}
-
-.tabs {
-  display: flex;
-  justify-content: center;
-
-  &.tabs--margin-bottom {
-    margin-bottom: 30px;
-  }
-
-  .tab {
-    min-width: 150px;
-    margin: 0 10px;
-    border: 0;
-    padding: 10px 20px;
-    color: #be9266;
-    font-size: 1.5em;
-    text-align: center;
-    background: transparent;
-    cursor: pointer;
-    transition: color 0.3s, background 0.3s;
-
-    &:hover {
-      color: #fff;
-      background: #be9266;
-    }
-  }
-
-  &[data-active="1"] .tab[data-active="1"],
-  &[data-active="2"] .tab[data-active="2"] {
-    color: #fff;
-    background: #42210b;
-  }
-}
-
-.tabs[data-active="1"] + .tab-content + .tab-content,
-.tabs[data-active="2"] + .tab-content {
-  display: none;
 }
 
 .nav {

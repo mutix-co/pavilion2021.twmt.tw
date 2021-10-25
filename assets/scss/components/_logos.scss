@@ -4,8 +4,7 @@
   justify-content: space-between;
   width: 80%;
   max-width: 1670px;
-  margin: 25px auto;
-  padding: 20px 0;
+  margin: 0 auto 50px;
   color: #222;
   text-align: center;
 
@@ -21,7 +20,7 @@
   justify-content: flex-start;
   flex-grow: 1;
   width: 45%;
-  margin: 10px 15px;
+  margin: 0 5px;
 
   @media (min-width: $screen-md) {
     width: 25%;
@@ -29,6 +28,7 @@
 
   @media (min-width: $screen-lg) {
     width: 20%;
+    margin: 20px 10px;
   }
 }
 
