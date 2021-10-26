@@ -126,6 +126,7 @@
     margin: 0 8px;
     border-radius: 50%;
     background: #c4c4c4;
+    cursor: pointer;
     transition: background 0.3s;
   }
   &[data-active="1"] li:nth-child(1),
