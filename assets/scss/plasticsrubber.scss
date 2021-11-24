@@ -1,0 +1,15 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --main: #438656;
+  --main-dark: #144421;
+}
+
+@import "./general";
+@import "./components/topbar";
+@import "./components/banner";
+@import "./components/events";
+@import "./components/main";
+@import "./components/event-profile";
+@import "./components/logos";
+@import "./components/footer";

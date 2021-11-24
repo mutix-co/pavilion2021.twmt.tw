@@ -31,6 +31,10 @@
   &.machinetool {
     background-image: url("~/assets/images/events/bg-machinetool.png");
   }
+
+  &.plasticsrubber {
+    background-image: url("~/assets/images/events/bg-plasticsrubber.png");
+  }
 }
 
 .events {
@@ -92,15 +96,6 @@
       height: 56px;
       font-size: 26px;
       line-height: 56px;
-    }
-
-    &.event-disabled {
-      font-size: 0.8em;
-      background: #828282;
-
-      @media (min-width: $screen-md) {
-        font-size: 26px;
-      }
     }
   }
 }
