@@ -26,7 +26,8 @@
     }
 
     @media (min-width: $screen-xl) {
-      height: 65vw;
+      height: auto;
+      max-height: inherit;
     }
   }
 }
