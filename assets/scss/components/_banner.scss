@@ -15,6 +15,7 @@
     margin: 0 auto;
     border: none;
     object-fit: cover;
+    object-position: center bottom;
 
     @media (min-width: $screen-md) {
       height: 65vw;
@@ -22,6 +23,10 @@
 
     @media (min-width: $screen-lg) {
       height: 60vw;
+    }
+
+    @media (min-width: $screen-xl) {
+      height: 65vw;
     }
   }
 }
